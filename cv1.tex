@@ -1,0 +1,84 @@
+\documentclass{MatCV}
+
+% using packages for symbols
+\usepackage{marvosym}
+\usepackage{fontawesome}
+
+% for multiline row in tablular
+\usepackage{pbox}
+
+% for multiple boxes
+\usepackage{multicol}
+
+% Lorem ipsum
+\usepackage{lipsum}
+
+% define theme
+%\renewcommand{\mattheme}{teal700}
+%\renewcommand{\mattheme}{pink500}
+%\renewcommand{\mattheme}{red500}
+%\renewcommand{\mattheme}{red900}
+%\renewcommand{\mattheme}{purple800}
+%\renewcommand{\mattheme}{lightblue500}
+%\renewcommand{\mattheme}{limeA400}
+%\renewcommand{\mattheme}{green700}
+%\renewcommand{\mattheme}{bluegrey800}
+\begin{document}
+\mattitle{John Doe}
+
+\matsection{About}{
+	\begin{tabular}{l r}
+		
+		\pbox{0.4\textwidth}{
+			\Mobilefone\ 111-222-3333 \\ \Email\ mail@mail.com \\ \Info\ http://mywebsite.com  \\ \faLinkedin\ https://www.linkedin.com/in/yourname \\
+		} &\hspace{7cm}\pbox{0.4\textwidth}{
+		\faHome\ 224B \\  West Lafayette \\ IN 0000-0000 \\  USA\\}
+\end{tabular}
+
+	}
+
+\matsection{Experience}{
+	\textbf{Some big company}, Some palce 
+	%\vspace{2mm}\\\vspace{1mm}%
+	
+	\textsl{Position} \hfill \textbf{ July 2008 -- July 2013}
+	\begin{itemize}
+		\item Did this
+		\item and that
+	\end{itemize}
+	
+	\matentry{Another big company}{Another palce}{Position}{July 2013 -- Present} 
+	\begin{itemize}
+		\item ...
+		\item ...
+	\end{itemize}	
+}
+
+\matsection{Education}{
+	\matentry{Some great university}{Place}{Master of Puppet Degree}{ July 2008 -- July 2013}%
+	
+	.....
+		}
+	
+\matsection{Skills}{Relevant Skills
+	\begin{multicols}{2}
+	\begin{itemize}
+		\item first skill
+		\item the next big skill
+		\item Third one
+		\item Sleep
+		\item Sleep some more
+		\item still more
+	\end{itemize}
+\end{multicols} 
+	}
+	
+\matsection{Academic Accolades}{Awards	
+		\begin{itemize}
+		\item Medal 1
+		\item Scholarship 1
+		\item Another medal
+	\end{itemize}
+}
+
+\end{document}
