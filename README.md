@@ -15,12 +15,12 @@
 ##  Introduction <a name="introduction"/>
 I started writing this latex class with the idea that  overall control should be with user. Essentially I provide you with two commands which create the major part of the template :
 1. `\mattitle{First Name Last Name}` : Creates the main title with name. This also has an alternate version which shows image as well `\matpictitle{First Name Last Name}{image}`
-2. `\matsection{Section Name}`: Creates the section in side margin
+2. `\matsection{Section Name}{ detail here}`: Creates the section in side margin
 
-Other than these two all other commands are optional (more of helper functions -- check example CV for their usage).
+Other than these two all other commands are optional (more of helper functions -- check [example CV](https://github.com/Adarsh-Barik/MinimalMaterialCV/blob/master/cv1.tex) for their usage).
 
 ## Color theme <a name="color"/>
-You can change the color of the theme by specifying a theme in preamble by typing `\renewcommand{\mattheme}{teal700}`. See example CV for full list of color themes.
+You can change the color of the theme by specifying a theme in preamble by typing `\renewcommand{\mattheme}{teal700}`. See [example CV](https://github.com/Adarsh-Barik/MinimalMaterialCV/blob/master/cv1.tex) for full list of color themes.
 
 ## How to? <a name="howto" />
 1. Like any other class use this by adding `\documentclass{MatCV}` to your preamble.  
