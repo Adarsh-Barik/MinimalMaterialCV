@@ -1,3 +1,5 @@
+% Author : adarsh
+% No guarantees/promises of any kind - Use at your own risk
 % A CV format based on material design guidelines
 % Design goals:
 % minimal, modern and material 
@@ -12,6 +14,11 @@
 % Set Font to be Roboto
 \RequirePackage{fontspec}
 \setmainfont{Roboto}
+
+% For pic title
+\RequirePackage{tikz}
+\RequirePackage[skins]{tcolorbox}
+\RequirePackage{graphicx}
 
 % Set material design colors
 \RequirePackage{xcolor}
@@ -29,7 +36,7 @@
 \newcommand{\mattheme}{teal700}
 
 % Section headers are formatted to be in margin
-\RequirePackage{titlesec}
+\RequirePackage[compact]{titlesec}
 
 % we'll work with a new environment so that we don't change
 % default options
@@ -37,18 +44,19 @@
 {
 	\setcounter{secnumdepth}{0}%
 	\titleformat{\section}[leftmargin]
-	{\LARGE
+	{\Large
 		\vspace{6pt}%
 	\bfseries\raggedright }
 	{\thesection}{.5em}{}[]
 	\titlespacing{\section}
-	{7pc}{1.5ex plus .1ex minus .2ex}{1pc}
+	{7pc}{1.5ex plus .1ex minus .2ex}{*0}
+%		{7pc}{1.5ex plus .1ex minus .2ex}{1pc}
 }
 {\setcounter{secnumdepth}{2}}
 
 \newcommand{\matsection}[2]{
 	\begin{newsection}
-		\section{\textcolor{\mattheme}{#1}} #2
+		\section{\textcolor{\mattheme}{#1\vss}} #2
 
 		\emph{\textcolor{mygray}{\rule{\textwidth}{0.0001mm}}}
 	\end{newsection}
@@ -79,6 +87,22 @@
 	\vspace*{30pt}
 }
 
+% Command to make picture title
+\newcommand{\matpictitle}[2]{
+	\pagenumbering{gobble}
+	\vspace*{0pt} 
+	\BgThispage
+	\noindent\begin{tikzpicture}
+	% one picture
+	\node[] at (0,0) {};
+	\node[circle,draw,thick, color=white, inner sep=0.8cm,fill zoom image=#2] at (4,0.2)  {};
+	\node[] at (8,0) {{\textcolor{white}{\Huge #1}}};
+	\node[] at (0,-0.4) {};
+	\end{tikzpicture}
+	\BgThispage
+	\vspace*{30pt}
+}
+
 % command to make a single cv entry
 \newcommand{\matentry}[4]{
 	\textbf{#1}, #2 
@@ -86,6 +110,32 @@
 	\textsl{#3} \hfill \textbf{#4}
 }
 
+% commands to get compact lists
+% taken as is from
+% RESUME DOCUMENT STYLE -- Released 23 Nov 1989
+%    for LaTeX version 2.09
+% Copyright (C) 1988,1989 by Michael DeCorte
+% Copyright (c) 1988 by Michael DeCorte
+% Permission to copy all or part of this work is granted, provided
+% that the copies are not made or distributed for resale, and that
+% the copyright notice and this notice are retained.
+%
+% THIS WORK IS PROVIDED ON AN "AS IS" BASIS.  THE AUTHOR PROVIDES NO
+% WARRANTY WHATSOEVER, EITHER EXPRESS OR IMPLIED, REGARDING THE WORK,
+% INCLUDING WARRANTIES WITH RESPECT TO ITS MERCHANTABILITY OR FITNESS
+% FOR ANY PARTICULAR PURPOSE.
+\newenvironment{list1}{
+	\begin{list}{\ding{113}}{%
+			\setlength{\itemsep}{0in}
+			\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+			\setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+			\setlength{\leftmargin}{0in}}}{\end{list}}
 
+\newenvironment{list2}{
+	\begin{list}{$\bullet$}{%
+			\setlength{\itemsep}{0in}
+			\setlength{\parsep}{0in} \setlength{\parskip}{0in}
+			\setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+			\setlength{\leftmargin}{0.25in}}}{\end{list}}
 
 

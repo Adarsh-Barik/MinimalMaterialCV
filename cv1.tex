@@ -1,3 +1,5 @@
+% example CV
+% author - Adarsh
 \documentclass{MatCV}
 
 % using packages for symbols
@@ -13,6 +15,7 @@
 % Lorem ipsum
 \usepackage{lipsum}
 
+
 % define theme
 %\renewcommand{\mattheme}{teal700}
 %\renewcommand{\mattheme}{pink500}
@@ -22,63 +25,90 @@
 %\renewcommand{\mattheme}{lightblue500}
 %\renewcommand{\mattheme}{limeA400}
 %\renewcommand{\mattheme}{green700}
-%\renewcommand{\mattheme}{bluegrey800}
+\renewcommand{\mattheme}{bluegrey800}
 \begin{document}
-\mattitle{John Doe}
+%\mattitle{John Doe}
+\matpictitle{John Doe}{example/Anonymous}
 
-\matsection{About}{
-	\begin{tabular}{l r}
-		
-		\pbox{0.4\textwidth}{
-			\Mobilefone\ 111-222-3333 \\ \Email\ mail@mail.com \\ \Info\ http://mywebsite.com  \\ \faLinkedin\ https://www.linkedin.com/in/yourname \\
-		} &\hspace{7cm}\pbox{0.4\textwidth}{
-		\faHome\ 224B \\  West Lafayette \\ IN 0000-0000 \\  USA\\}
-\end{tabular}
-
+\matsection{About}{\hspace{2em}
+	\vspace{-2.6em}
+	\begin{multicols}{2}
+	\Mobilefone\ 111-222-3333 
+	
+	 \Email\ john@doe.com
+	 
+	 \faLinkedin\ https://www.linkedin.com/johndoe
+	 
+	 \Info\ http://JohnDoe.com
+	 
+	 \columnbreak
+	 \faHome\ 44 Church Road, Flat 3
+	 
+	  London W1W
+	  
+	  Fire: SE-4120
+	  
+	  United Kingdom
+	\end{multicols} 
+	}
+	
+\matsection{Research Interest}{
+    \hspace{2em}
+	\vspace{-2.6em}
+	\begin{multicols}{2}
+		\begin{list2}
+			\item Cyber crime
+			\item Cryptography
+			\item Computer security
+			\item Artificial Intelligence
+			\end{list2}
+	\end{multicols} 
+	}
+	
+\matsection{Education}{
+	\matentry{Institute of Cybernetics}{United States}{Master of Science}{July 2008- July 2013}
+	\begin{list2}
+		\item Guide: Professor M Harvey
+		\item Specialization: Chryptography
+		\item Grade Point Average: $3.8$
+	\end{list2}
 	}
 
-\matsection{Experience}{
-	\textbf{Some big company}, Some palce 
-	%\vspace{2mm}\\\vspace{1mm}%
+\matsection{Research Experience}{
+	\matentry{Institute of Cybernetics}{United States}{Research Associate}{July 2010 -- July 2011} 
+	\begin{list2}
+		\item Developed a novel algorithm for encryption
+		\item Filed for a patent and got it approved
+	\end{list2}	
 	
-	\textsl{Position} \hfill \textbf{ July 2008 -- July 2013}
-	\begin{itemize}
-		\item Did this
-		\item and that
-	\end{itemize}
-	
-	\matentry{Another big company}{Another palce}{Position}{July 2013 -- Present} 
-	\begin{itemize}
-		\item ...
-		\item ...
-	\end{itemize}	
+	\matentry{American Intelligence Network}{United States}{Summer Intern}{July 2012 -- October 2013} 
+	\begin{list2}
+		\item Worked as part of cryptography team
+		\item Improved performance of encryption techniques
+	\end{list2}	
 }
 
-\matsection{Education}{
-	\matentry{Some great university}{Place}{Master of Puppet Degree}{ July 2008 -- July 2013}%
-	
-	.....
+\matsection{Professional Experience}{
+	\matentry{Break IT in!}{United States}{Founder, CTO}{ May 2013 -- July 2015}
+	\begin{list2}
+		\item Founded a cyber security startup 
+		\item Managed 25+ clients in 2 years
+		\item Got featured in best startup 2013-14
+	\end{list2}
 		}
 	
-\matsection{Skills}{Relevant Skills
+\matsection{Skills}{
+	\hspace{2em}
+	\vspace{-2.6em}
 	\begin{multicols}{2}
-	\begin{itemize}
-		\item first skill
-		\item the next big skill
-		\item Third one
-		\item Sleep
-		\item Sleep some more
-		\item still more
-	\end{itemize}
+	\begin{list2}
+		\item \textsl{Programing Language: }C, C++, Python 
+		\item \textsl{Scripting Language: }Bash, Csh 
+		\item \textsl{Programing Tools: }Eclipse, Vim
+		\item \textsl{Operating System: }GNU Linux, Windows
+		\item \textsl{Software: }MATLAB\textsuperscript{\textregistered}, ANSYS, Solid Works, ProE, AutoCAD, \LaTeX
+	\end{list2}
 \end{multicols} 
 	}
-	
-\matsection{Academic Accolades}{Awards	
-		\begin{itemize}
-		\item Medal 1
-		\item Scholarship 1
-		\item Another medal
-	\end{itemize}
-}
 
 \end{document}
