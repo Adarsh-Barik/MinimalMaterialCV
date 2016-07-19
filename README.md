@@ -29,7 +29,7 @@ You can change the color of the theme by specifying a theme in preamble by typin
 4. Unleash your creativity.
 
 ## Screenshot <a name="screenshot" />
-Please download the example CV (`cv1.pdf`). Preview in git loses some minor details. Here are few screenshot for your references:
+Please download the example CV (`cv1.pdf`). Preview in git loses some minor details. Here are few screenshots for your reference:
 ### One page (without image) <a name="woi" />
 ![alt tag] (https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/cv1.jpg)
 ### One page (with image) <a name="wi" />
