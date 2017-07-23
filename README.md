@@ -1,6 +1,6 @@
 #  Table of Content
-1. [Introduction] (#introduction)
-2. [Color theme] (#color)
+1. [Introduction](#introduction)
+2. [Color theme](#color)
 3. [How to?](#howto)
 4. [Screenshot](#screenshot)
 
@@ -31,12 +31,12 @@ You can change the color of the theme by specifying a theme in preamble by typin
 ## Screenshot <a name="screenshot" />
 Please download the example CV (`cv1.pdf`). Preview in git loses some minor details. Here are few screenshots for your reference:
 ### One page (without image) <a name="woi" />
-![alt tag] (https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/cv1.jpg)
+![alt tag](https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/cv1.jpg)
 ### One page (with image) <a name="wi" />
-![alt tag] (https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/cv1_image.jpg)
+![alt tag](https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/cv1_image.jpg)
 ### Themes <a name="themes" />
 Some themes
-![alt tag] (https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/themes.jpg)
+![alt tag](https://raw.githubusercontent.com/Adarsh-Barik/MinimalMaterialCV/master/example/themes.jpg)
 
 ## Credits <a name="credits" />
 1. Design is obviously inspired by Google's Material Design
